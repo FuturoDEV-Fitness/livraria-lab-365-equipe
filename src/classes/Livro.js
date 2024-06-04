@@ -1,25 +1,30 @@
 const crypto = require('crypto');
 class Livro {
 
-    #nome = ''; 
+    #nome = '';
     #autor = '';
     #codigo = 0;
     #generoLiterario = '';
     #quantidadePaginas = 0;
 
-    constructor(nome) {
-    // constructor(codigo, nome, quantidadePaginas, genero, autor) {
-        this.#nome = nome;
+    constructor() {
+        // this.#nome = nome;
         this.#codigo = crypto.randomUUID();
-        // this.#autor;
-        // this.#generoLiterario;
-        // this.#quantidadePaginas;
     }
-    
+
+    //constructor, podemos iniciar como vacio o pedir variables para cuando iniciar
+    //constructor(codigo, nome, quantidadePaginas, genero, autor) {
+    //this.#nome = nome;
+    //this.#codigo = crypto.randomUUID();
+    //this.#autor;
+    //this.#generoLiterario;
+    //this.#quantidadePaginas;
+    //}
+
     get getNome() {
         return this.#nome;
     }
-    
+
     set setNome(nome) {
         this.#nome = nome;
     }
