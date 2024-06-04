@@ -26,5 +26,19 @@
     "codigo": "4e4933b3-451f-469c-bf59-0eed91036673",
     "generoLiterario": "cuentoskaori",
     "quantidadePaginas": "50"
+  },
+  {
+    "nome": "quimica",
+    "autor": "chang",
+    "codigo": "97213541-2a35-41ef-a06f-45a91b6a5128",
+    "generoLiterario": "ciencia",
+    "quantidadePaginas": "150"
+  },
+  {
+    "nome": "tres cerditos",
+    "autor": "editorial ninos",
+    "codigo": "c030c624-d43f-4478-acb8-f82241653a04",
+    "generoLiterario": "cuentos",
+    "quantidadePaginas": "10"
   }
 ]

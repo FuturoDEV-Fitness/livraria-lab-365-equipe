@@ -39,9 +39,9 @@ class LivroCrud {
         //const livroEncontrado = conteudoActual.find( livro => livro.autor === palavra)
 
         if (livroEncontrado) {
-            console.log(`Livro encontrado.\n Nome: ${livroEncontrado.nome}\n Autor: ${livroEncontrado.autor}\n NomeGenero: ${livroEncontrado.generoLiterario}\n Numero de paginas: ${livroEncontrado.quantidadePaginas}\n Codigo: ${livroEncontrado.codigo}`)
+            console.log(`\nLIBRO ENCONTRADO!\n Nome: ${livroEncontrado.nome}\n Autor: ${livroEncontrado.autor}\n NomeGenero: ${livroEncontrado.generoLiterario}\n Numero de paginas: ${livroEncontrado.quantidadePaginas}\n Codigo: ${livroEncontrado.codigo}`)
         } else {
-            console.log("Livro NAO encontrado")
+            console.log("LIBRO NAO ENCONTRADO!")
         }
     }
 
@@ -51,9 +51,10 @@ class LivroCrud {
         const livroEncontrado = conteudoActual.find((livro) => {
             return livro.codigo === codigo
         })
-        if (livroEncontrado){
-            return true
-        }else{ return false}
+        return livroEncontrado;
+        // if (livroEncontrado){
+        //     return livroEncontrado
+        // }else{ return false}
     }
 
     alterar(codigo, nome, quantidadePaginas, generoLiterario, autor) {
@@ -92,6 +93,21 @@ class LivroCrud {
         console.log(`Dados sem Alterar:\n Nome: ${livroEncontrado.nome}\n Autor: ${livroEncontrado.autor}\n NomeGenero: ${livroEncontrado.generoLiterario}\n Numero de paginas: ${livroEncontrado.quantidadePaginas}`)
 
         console.log(`\nDados Alterados:\n Nome: ${livroModificado.nome}\n Autor: ${livroModificado.autor}\n NomeGenero: ${livroModificado.generoLiterario}\n Numero de paginas: ${livroModificado.quantidadePaginas}\n Codigo: ${livroModificado.codigo}`)
+    }
+    deletar(codigo){
+        const conteudoActual = JSON.parse(fs.readFileSync(this.filePath, 'utf8'));
+        
+        const novaLista = conteudoActual.filter((livro) =>{
+            if (livro.codigo != codigo){
+                return livro
+            }
+        })
+
+        fs.writeFileSync(
+            this.filePath,
+            JSON.stringify(novaLista, null, 2),
+            'utf8'
+        )
     }
 }
 
