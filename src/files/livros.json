@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "nome": "Livro primeiro",
+    "autor": "Autor 1.1",
+    "codigo": "4054c2db-f7d8-45a4-8090-6930606d0fee",
+    "generoLiterario": "genero 1",
+    "quantidadePaginas": "365"
+  },
+  {
+    "nome": "fisica",
+    "autor": "Resnick",
+    "codigo": "fd642043-fe3a-48f5-86e2-1d1311c0857e",
+    "generoLiterario": "ciencia",
+    "quantidadePaginas": "500"
+  },
+  {
+    "nome": "livro patata",
+    "autor": "autor1",
+    "codigo": "8f142405-297b-40e7-952d-e9eba779acc6",
+    "generoLiterario": "genero1",
+    "quantidadePaginas": "100"
+  },
+  {
+    "nome": "librokaori",
+    "autor": "kaori",
+    "codigo": "4e4933b3-451f-469c-bf59-0eed91036673",
+    "generoLiterario": "cuentoskaori",
+    "quantidadePaginas": "50"
+  },
+  {
+    "nome": "quimica",
+    "autor": "chang",
+    "codigo": "97213541-2a35-41ef-a06f-45a91b6a5128",
+    "generoLiterario": "ciencia",
+    "quantidadePaginas": "150"
+  },
+  {
+    "nome": "tres cerditos",
+    "autor": "editorial ninos",
+    "codigo": "c030c624-d43f-4478-acb8-f82241653a04",
+    "generoLiterario": "cuentos",
+    "quantidadePaginas": "10"
+  }
+]
